@@ -67,8 +67,8 @@
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                    First of all, the Code inside script tag gets executed by the JavaScript engine. One of the common engine that used by chrome is V8 where the JavaScript gets executed.
-
+                    First of all, the Code inside script tag gets executed by the JavaScript engine V8(used by chrome).
+                    
                     The JavaScript code first of all send to the UTF-16 byte stream which creates a readable value and then send to the parser. The parser filters the values and send only the necessary values to next phase.
                     
                     Based on the values received by the decoder, some related nodes gets generated that is called Abstract Syntax Tree. That AST gets interpreted by the browser engine and produce byte codes. The AST then removes from there after interpretation.
@@ -77,27 +77,18 @@
                 </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Accordion Item #2
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
-              </div>
-            </div>
+            
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Accordion Item #3
+                  What is the difference between Local Storage and Session Storage?
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <strong>Local Storage:</strong> The Local Storage stores the value or Value pair on local disk. A specific storage gets allocated for each sites. each time user visits a website, some data of the user gets stored inside local storage as string and those can be viewed later and available for a certain period of time.
+                    <br>
+                    <strong>Session Storage:</strong> The Session storage store a specific length of page session that is done by the user on local disk. The data will be stored till the window is opened. The data will be removed as soon as the window closed. It is very beneficiary as it will help to regain the temporary data if the browser session is accidently refreshed.
                 </div>
               </div>
             </div>
