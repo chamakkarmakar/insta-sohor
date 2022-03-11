@@ -39,20 +39,20 @@ const switchTab = (id) => {
     document.getElementById("liked").style.display = "block";
     document.getElementById("posts").style.display = "none";
     document.getElementById("reported").style.display = "none";
-
+    document.getElementById("liked").innerHTML="";
     displayLikedPosts();
   } else {
     document.getElementById("reported").style.display = "block";
     document.getElementById("posts").style.display = "none";
     document.getElementById("liked").style.display = "none";
-
+    document.getElementById("reported").innerHTML="";
     displayReportedPosts();
   }
 };
 
 const createPost = (post) => {
   const image = post.image;
-  console.log(post.userImage)
+  
   const div = document.createElement("article");
   div.classList.add("post");
   div.innerHTML = `
@@ -147,6 +147,7 @@ const displayLikedPosts = () => {
     const div = createPost(post);
     document.getElementById("liked").appendChild(div);
   });
+  
 };
 
 const displayReportedPosts = () => {
